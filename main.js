@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .then(response => response.json()) 
         .then(json => {
-            console.log(json); // แสดงผลลัพธ์จาก API ใน console
+            console.log(json);
             alert(`Data submitted: ${json.name} with ID ${json.id}`);
         })
         .catch(error => {
