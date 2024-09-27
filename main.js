@@ -1,13 +1,11 @@
 // POST data to the API when the form is submitted
 document.addEventListener('DOMContentLoaded', function() {
-    // Function to POST data to API
     document.querySelector('form').onsubmit = function (event) {
-        event.preventDefault(); // ป้องกันการรีเฟรชหน้าเว็บเมื่อกด submit
+        event.preventDefault(); 
 
-        const name = document.querySelector('#name').value; // รับค่า name จากฟอร์ม
-        const id = document.querySelector('#id').value; // รับค่า id จากฟอร์ม
+        const name = document.querySelector('#name').value; 
+        const id = document.querySelector('#id').value; 
 
-        // ส่งข้อมูลแบบ POST ไปยัง API
         fetch("https://206.189.146.138/api/students", { 
             method: "POST", 
             body: JSON.stringify({ 
