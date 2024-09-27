@@ -26,5 +26,5 @@ document.addEventListener('DOMContentLoaded', function() {
         .catch(error => {
             console.error('Error:', error);
         });
-    }; // <-- ปิดฟังก์ชัน onsubmit ที่นี่
-}); // <-- ปิดฟังก์ชัน DOMContentLoaded ที่นี่
+    }; 
+}); 
